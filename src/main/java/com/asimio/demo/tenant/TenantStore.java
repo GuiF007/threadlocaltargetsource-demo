@@ -12,4 +12,8 @@ public class TenantStore {
 		this.tenantId = tenantId;
 	}
 
+	public void reset() {
+	    this.tenantId = null;
+	}
+
 }
