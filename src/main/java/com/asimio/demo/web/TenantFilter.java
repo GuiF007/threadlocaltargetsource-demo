@@ -45,7 +45,7 @@ public class TenantFilter implements Filter {
 		} finally {
 		    // Otherwise when a previously used container thread is used, it will have the old tenant id set and
 		    // if for some reason this filter is skipped, tenantStore will hold an unreliable value
-		    this.tenantStore.reset();
+		    this.tenantStore.clear();
 		}
 	}
 

@@ -12,7 +12,7 @@ public class TenantStore {
 		this.tenantId = tenantId;
 	}
 
-	public void reset() {
+	public void clear() {
 	    this.tenantId = null;
 	}
 
