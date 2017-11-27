@@ -40,7 +40,7 @@ public class AppConfig {
 	}
 
 	@Primary
-	@Bean(name = "proxiedTenantStore")
+	@Bean(name = "proxiedThreadLocalTargetSource")
 	public ProxyFactoryBean proxiedTenantStore(ThreadLocalTargetSource threadLocalTargetSource) {
 		ProxyFactoryBean result = new ProxyFactoryBean();
 		result.setTargetSource(threadLocalTargetSource);
