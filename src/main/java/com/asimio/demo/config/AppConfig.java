@@ -41,7 +41,7 @@ public class AppConfig {
 
 	@Primary
 	@Bean(name = "proxiedThreadLocalTargetSource")
-	public ProxyFactoryBean proxiedTenantStore(ThreadLocalTargetSource threadLocalTargetSource) {
+	public ProxyFactoryBean proxiedThreadLocalTargetSource(ThreadLocalTargetSource threadLocalTargetSource) {
 		ProxyFactoryBean result = new ProxyFactoryBean();
 		result.setTargetSource(threadLocalTargetSource);
 		return result;
