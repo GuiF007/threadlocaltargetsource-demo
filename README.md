@@ -4,8 +4,8 @@ Accompanying source code for blog entry at http://tech.asimio.net/2017/11/28/An-
 
 ### Requirements ###
 
-* Java 8
-* Maven 3.3.x
+* Java 7 or 8
+* Maven 3.3 or better
 
 ### Building and running from command line ###
 
