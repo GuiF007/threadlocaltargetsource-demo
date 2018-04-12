@@ -40,8 +40,8 @@ public class TenantFilter implements Filter {
 	    HttpServletRequest request = (HttpServletRequest) servletRequest;
 		String tenantId = request.getHeader(TENANT_HEADER_NAME);
 		try {
-    		this.tenantStore.setTenantId(tenantId);
-    		chain.doFilter(servletRequest, servletResponse);
+			this.tenantStore.setTenantId(tenantId);
+			chain.doFilter(servletRequest, servletResponse);
 		} finally {
 		    // Otherwise when a previously used container thread is used, it will have the old tenant id set and
 		    // if for some reason this filter is skipped, tenantStore will hold an unreliable value
