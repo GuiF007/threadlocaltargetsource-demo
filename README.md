@@ -1,16 +1,17 @@
 # README #
 
-Accompanying source code for blog entry at http://tech.asimio.net/2017/11/28/An-alternative-to-ThreadLocal-using-Spring.html
+Original idea : Accompanying source code for blog entry at http://tech.asimio.net/2017/11/28/An-alternative-to-ThreadLocal-using-Spring.html
+My Work : Pumped to Java 11 and Spring Boot 2.1.x
 
 ### Requirements ###
 
-* Java 7 or 8
-* Maven 3.3 or better
+* Java 11
+* Maven 3.5 or better
 
 ### Building and running from command line ###
 
 ```
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 ### Available endpoints ###
